@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title> Projekty </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="site-background">
+<header>
+    <h1 id="page-header"> Patryk Barczak </h1>
+    <h2 id="header-desc"> Moje projekty </h2>
+</header>
+<nav class="navbar my-block">
+    <a class="but-link" href="index.html"> Strona główna </a>
+    <a class="but-link" href="projects.html"> Projekty </a>
+    <a class="but-link" href="interests.html"> Zainteresowania </a>
+</nav>
+<main class="content">
+    <article>
+        <h2><a class="gray-link" href="https://github.com/albi23/Quiz-app"> Quiz App </a></h2>
+        <p>
+            Gra mobilna na system Android. Napisana w języku Kotlin.
+            Jest to quiz, w którym odpowiadamy na pytania zamknięte z wybranej kategorii.
+            Oprócz tego, możemy porównywać wyniki ze znajomymi lub dostosywać motyw aplikacji.
+            Projekt wykonywany był w zespole 4-osobowym.
+        </p>
+    </article>
+    <article>
+        <h2><a class="gray-link" href="https://github.com/barchuckie/chinese-checkers"> Chinese Checkers </a></h2>
+        <p>
+            Gra sieciowa w chińskie warcaby. Napisana w języku Java.
+            Umożliwia rozgrywkę wieloosobową do 5 osób. Można również grać z botami,
+            które są dosyć wymagające. Projekt wykonywany w parze.
+        </p>
+    </article>
+    <article>
+        <h2><a class="gray-link" href="https://github.com/Piotr2402/AlbAlbCar"> Alb Alb Car </a></h2>
+        <p>
+            Aplikacja webowa umożliwiająca umawianie się na wspólne przejazdy. Pozwala dzielić się kosztami podróży.
+            Wykorzystuje różne technologie tj. SQL, Java (Spring) oraz webowe.
+            Projekt wykonywany jest w 4-osobowym zespole.
+        </p>
+        <figure style="width: 100%; overflow-x: auto">
+                <code>
+                    <pre>
+@PostMapping(value = "/remove-ride")
+public Map&lt;String, Object&gt; removeRide(@RequestBody ObjectNode rideData) {
+    int rideId = rideData.findValue("rideId").asInt();
+    String login = rideData.findValue("login").asText();
+    return rideService.removeRide(rideId, login);
+}
+                    </pre>
+                </code>
+        </figure>
+    </article>
+    <a class="gray-link" href="https://github.com/barchuckie"> Pozostałe projekty (github.com/barchuckie) </a>
+</main>
+<footer class="my-block">
+    <address>
+        Patryk Barczak <br>
+        ul. Bp Tomasza I 10/14, <br>
+        50-221 Wrocław <br>
+        +48 721 475 045 <br>
+        <a class="gray-link" href="mailto:244968@student.pwr.edu.pl"> 244968@student.pwr.edu.pl </a> <br>
+        <a class="gray-link" href="mailto:patryk_barczak@wp.pl"> patryk_barczak@wp.pl </a>
+    </address>
+</footer>
+</body>
+</html>
