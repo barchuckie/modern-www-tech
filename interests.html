@@ -5,17 +5,31 @@
     <title> Zainteresowania </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="menu-script.js"></script>
 </head>
 <body class="site-background">
 <header>
     <h1 id="page-header"> Patryk Barczak </h1>
     <h2 id="header-desc"> Zainteresowania </h2>
 </header>
-<nav class="navbar my-block">
-    <a class="but-link" href="index.html"> Strona główna </a>
-    <a class="but-link" href="projects.html"> Projekty </a>
-    <a class="but-link" href="interests.html"> Zainteresowania </a>
+<nav id="main-nav" class="topnavbar my-block">
+    <a class="but-link" href="index.html"> <i id="main-pic" class="fa fa-home pic"></i> Strona główna </a>
+    <a class="but-link" href="projects.html"> <i id="projects-pic" class="fa fa-tasks pic"></i> Projekty </a>
+    <a class="but-link" href="interests.html"> <i id="interests-pic" class="fa fa-laptop pic"></i> Zainteresowania </a>
+    <a href="javascript:void(0);" class="icon" onclick="controlNavbar()">
+        <i class="fa fa-bars"></i>
+    </a>
 </nav>
+<noscript>
+    <nav id="noscript-main-nav" class="my-block">
+        <a class="but-link" href="index.html"> Strona główna </a>
+        <a class="but-link" href="projects.html"> Projekty </a>
+        <a class="but-link" href="interests.html"> Zainteresowania </a>
+    </nav>
+</noscript>
 <main class="content">
     <article>
         <h2> Zainteresowania informatyczne </h2>
