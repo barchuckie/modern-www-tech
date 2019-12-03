@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple puzzle</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="puzzle_script.js"></script>
+</head>
+<body onload="init()">
+<div class="container">
+    <h1> Puzzle game! </h1>
+    <div class="row">
+        <canvas id="canvas" class="game"></canvas>
+    </div>
+    <button onclick="gameOver()">New Game</button><br/>
+    <label for="columns"># columns</label>
+    <input type="number" name="columns" id="columns" value="4"/><br/>
+    <label for="rows"># rows</label>
+    <input type="number" name="rows" id="rows" value="4"/><br/>
+    <img id="preview" class="thumb" src="resources/compressed/painting-min.jpg" onclick="newGame('resources/painting.jpg')" alt="doggo">
+    <img src="resources/compressed/nintendo-min.png" class="thumb" onclick="newGame('resources/nintendo.png')" alt="nintendo">
+    <img src="resources/compressed/playstation-min.png" class="thumb" onclick="newGame('resources/playstation.png')" alt="playstation">
+</div>
+</body>
+</html>
