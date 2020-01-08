@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title> Patryk Barczak </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="menu-script.js"></script>
+</head>
+<body class="site-background">
+<header>
+    <h1 id="page-header"> Patryk Barczak </h1>
+    <h2 id="header-desc"> Student Informatyki @
+        <a class="gray-link" href="https://cs.pwr.edu.pl"> WPPT PWr </a>
+    </h2>
+</header>
+<nav id="main-nav" class="topnavbar my-block">
+    <a class="but-link" href="index.html"> <i id="main-pic" class="fa fa-home pic"></i> Strona główna </a>
+    <a class="but-link" href="projects.html"> <i id="projects-pic" class="fa fa-tasks pic"></i> Projekty </a>
+    <a class="but-link" href="interests.html"> <i id="interests-pic" class="fa fa-laptop pic"></i> Zainteresowania </a>
+    <a href="javascript:void(0);" class="icon" onclick="controlNavbar()">
+        <i class="fa fa-bars"></i>
+    </a>
+</nav>
+<noscript>
+    <nav id="noscript-main-nav" class="my-block">
+        <a class="but-link" href="index.html"> Strona główna </a>
+        <a class="but-link" href="projects.html"> Projekty </a>
+        <a class="but-link" href="interests.html"> Zainteresowania </a>
+    </nav>
+</noscript>
+<main id="about-me" class="row content">
+    <img id="profile-photo" class="column" src="resources/profile.jpg" alt="Profilowe">
+    <article id="info" class="column">
+        <h1> Patryk Barczak </h1>
+        <p>
+            Jestem studentem trzeciego roku informatyki na Wydziale Podstawowych Problemów Techniki
+            Politechniki Wrocławskiej.
+        </p>
+        <p>
+            Moimi głównym zainteresowaniem jest informatyka. W szczególności lubię algorytmikę.
+            Poza tym jestem fanem żużla oraz motoryzacji. Pochodzę z Leszna, zatem wiernie
+            kibicuję Unii Leszno.
+        </p>
+    </article>
+</main>
+<footer class="my-block">
+    <address>
+        Patryk Barczak <br>
+        ul. Bp Tomasza I 10/14, <br>
+        50-221 Wrocław <br>
+        +48 721 475 045 <br>
+        <a class="gray-link" href="mailto:244968@student.pwr.edu.pl"> 244968@student.pwr.edu.pl </a> <br>
+        <a class="gray-link" href="mailto:patryk_barczak@wp.pl"> patryk_barczak@wp.pl </a>
+    </address>
+</footer>
+</body>
+</html>
